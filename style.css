@@ -1,0 +1,164 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lora', serif;
+    /* border: 1px solid red; */
+}
+
+.container{
+ 
+     min-height: 100vh;
+    background-image: url(./main-img/main.webp);
+    background-position: top;
+    background-size: cover;
+    padding: 30px 100px;
+}
+.navbar{
+    height: 80px;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar h1{
+ font-size: 50px;
+color: rgb(0, 0, 0);
+
+
+}
+
+.hero-section{
+    width: 100%;
+    min-height: 80vh;
+    
+    display: flex;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 20px;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+
+.text-section{
+    width: 68%;
+    padding: 30px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.text-section h1{
+    margin-top: -50px;
+    font-size: 50px;
+   
+}
+  
+ /* button  */
+.cta {
+    cursor: pointer;
+    position: relative;
+    margin: auto;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+   }
+   
+   .cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    /* background: #b1dae7; */
+    background: #00b8f0;
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease;
+   }
+   
+   .cta span {
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #234567;
+   }
+   
+   .cta svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #234567;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+   }
+   
+   .cta:hover:before {
+    width: 100%;
+    background: #00b8f0;
+   }
+   
+   .cta:hover svg {
+    transform: translateX(0);
+   }
+   
+   .cta:active {
+    transform: scale(0.95);
+   }
+
+
+
+
+
+.text-section p{
+    border-radius: 8px;
+    padding: 20px;
+    font-size: 20px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(54, 54, 54);
+    
+}
+
+.image-section {
+    width: 32%;
+    max-height: 80vh;
+
+    overflow: hidden;
+   
+}
+
+.image-section img{
+    width: 450px;
+}
+
+@media screen and (max-width: 1080px) {
+    .hero-section{
+        
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+      border-radius: 20px;
+      overflow: hidden;
+      flex-wrap: wrap;
+    }
+    .text-section{
+        width: 100%;
+        height: 500px;
+        
+    }
+    .image-section {
+        display: none;
+       
+    }
+  
+  }
